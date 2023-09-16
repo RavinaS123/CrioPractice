@@ -4,7 +4,6 @@
 package demo;
 import java.net.MalformedURLException;
 
-//first push - Ravina 17 Sep 2023
 public class App {
     public void getGreeting() throws InterruptedException, MalformedURLException {
         //TestCases tests = new TestCases(); // Initialize your test class
