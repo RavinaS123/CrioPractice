@@ -4,20 +4,24 @@
 package demo;
 import java.net.MalformedURLException;
 
-//first push - Ravina 17 Sep 2023
 public class App {
     public void getGreeting() throws InterruptedException, MalformedURLException {
         //TestCases tests = new TestCases(); // Initialize your test class
-        AmazonSearch amazon = new AmazonSearch();
+        //AmazonSearch amazon = new AmazonSearch();
+        HyperlinkCount hyperLink = new HyperlinkCount();
 
         //Todo: call your test case functions one after other here
 
         //tests.testCase01();
-        amazon.testCase01();
-        
+        //amazon.testCase01();
+        hyperLink.testCase01();
+
         //END Tests
-        //tests.endTest(); // End your test by clearning connections and closing browser
-        amazon.endTest();
+        //End your test by clearning connections and closing browser
+
+        //tests.endTest(); 
+        //amazon.endTest();
+        hyperLink.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
