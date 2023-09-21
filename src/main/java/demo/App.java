@@ -10,14 +10,16 @@ public class App {
         //TestCases tests = new TestCases(); // Initialize your test class
         //AmazonSearch amazon = new AmazonSearch();
         //HyperlinkCount hyperLink = new HyperlinkCount();
-        Linkedin linkedin = new Linkedin();
+        //Linkedin linkedin = new Linkedin();
+        BookMyShow bms = new BookMyShow();
 
         //Todo: call your test case functions one after other here
 
         //tests.testCase01();
         //amazon.testCase01();
         //hyperLink.testCase01();
-        linkedin.testCase01();
+        //linkedin.testCase01();
+        bms.testCase01();
 
         //END Tests
         //End your test by clearning connections and closing browser
@@ -25,7 +27,8 @@ public class App {
         //tests.endTest(); 
         //amazon.endTest();
         //hyperLink.endTest();
-        linkedin.endTest();
+        //linkedin.endTest();
+        bms.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException, AWTException {
