@@ -11,7 +11,8 @@ public class App {
         //AmazonSearch amazon = new AmazonSearch();
         //HyperlinkCount hyperLink = new HyperlinkCount();
         //Linkedin linkedin = new Linkedin();
-        BookMyShow bms = new BookMyShow();
+        //BookMyShow bms = new BookMyShow();
+        NestedFrames nf = new NestedFrames();
 
         //Todo: call your test case functions one after other here
 
@@ -19,7 +20,8 @@ public class App {
         //amazon.testCase01();
         //hyperLink.testCase01();
         //linkedin.testCase01();
-        bms.testCase01();
+        //bms.testCase01();
+        nf.testcase01();
 
         //END Tests
         //End your test by clearning connections and closing browser
@@ -28,7 +30,8 @@ public class App {
         //amazon.endTest();
         //hyperLink.endTest();
         //linkedin.endTest();
-        bms.endTest();
+        //bms.endTest();
+        nf.endTest();
     }
 
     public static void main(String[] args) throws InterruptedException, MalformedURLException, AWTException {
