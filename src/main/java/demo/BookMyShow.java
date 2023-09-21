@@ -48,8 +48,6 @@ public class BookMyShow
             driver.findElement(By.className("emCCuK")).click();
             Thread.sleep(1000);
             
-            int size = movieTitles1.size() + movieTitles2.size();
-            
             List<WebElement> moviesTitle = new ArrayList<>();
             for(WebElement webElement : movieTitles1)
             {
