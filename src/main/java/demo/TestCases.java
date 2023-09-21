@@ -1,14 +1,15 @@
 package demo;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
+//import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 //Selenium Imports
-import org.openqa.selenium.Keys;
+/*import org.openqa.selenium.Keys;
 import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Select;*/
 //
 
 
@@ -20,7 +21,8 @@ public class TestCases {
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
     }
 
