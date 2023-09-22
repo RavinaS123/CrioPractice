@@ -39,4 +39,6 @@ run.dependsOn startScript
 
 test.dependsOn startScript*/
 
+buildDir = '/tmp/external_build'
+
 mainClassName = 'demo.App'
