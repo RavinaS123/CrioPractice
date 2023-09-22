@@ -3,17 +3,19 @@
  */
 package demo;
 import java.awt.AWTException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 public class App {
-    public void getGreeting() throws InterruptedException, MalformedURLException, AWTException {
+    public void getGreeting() throws InterruptedException, MalformedURLException, AWTException, IOException {
         //TestCases tests = new TestCases(); // Initialize your test class
         //AmazonSearch amazon = new AmazonSearch();
         //HyperlinkCount hyperLink = new HyperlinkCount();
         //Linkedin linkedin = new Linkedin();
         //BookMyShow bms = new BookMyShow();
         //NestedFrames nf = new NestedFrames();
-        IMDB imdb = new IMDB();
+        //IMDB imdb = new IMDB();
+        WindowHandle windowHandle = new WindowHandle();
 
         //Todo: call your test case functions one after other here
 
@@ -23,7 +25,8 @@ public class App {
         //linkedin.testCase01();
         //bms.testCase01();
         //nf.testcase01();
-        imdb.testCase01();
+        //imdb.testCase01();
+        windowHandle.testCase01();
 
         //END Tests
         //End your test by clearning connections and closing browser
@@ -34,10 +37,11 @@ public class App {
         //linkedin.endTest();
         //bms.endTest();
         //nf.endTest();
-        imdb.endTest();
+        //imdb.endTest();
+        windowHandle.endTest();
     }
 
-    public static void main(String[] args) throws InterruptedException, MalformedURLException, AWTException {
+    public static void main(String[] args) throws InterruptedException, MalformedURLException, AWTException, IOException {
         new App().getGreeting();
     }
 }
